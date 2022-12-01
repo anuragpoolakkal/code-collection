@@ -10,7 +10,7 @@ Collection of implementation and documentation of program codes.
       - Add same programs in different programming languages
       - Edit existing programs if you find any mistake
       - Add comments to the program code<br>
-4. Commit your changes
+4. Commit the changes
 5. Open a pull request
 
 All programming languages are acceptable.
