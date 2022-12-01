@@ -3,8 +3,8 @@
 #include <stdio.h>
 #define MAXSIZE 10
 int queue[MAXSIZE];
-int front=0;
-int rear=-1;
+int front = 0;
+int rear =- 1;
 int enqueue(int a);
 int dequeue();
 int display();
@@ -15,16 +15,13 @@ void main() {
 	int a, m;
 	
 	do {
-		printf ("\n Choose the option:");
-		printf ("\n 1. Insert  2. Delete  3. Display 4. Exit: ");
-		scanf ("%d",&m);
+		printf("\n Choose the option:");
+		printf("\n 1. Insert  2. Delete  3. Display 4. Exit: ");
+		scanf("%d",&m);
 		switch (m) {
-			case 1: printf("\n Enter the element to be inserted: ");
-				scanf("%d",&a);
-				enqueue(a);
-				break;
-			case 2: dequeue();
-				break;
+			case 1: printf("\n Enter the element to be inserted: "); scanf("%d",&a);
+				enqueue(a); display(); break;
+			case 2: dequeue(); display(); break;
 			case 3: display(); break;
 			case 4: break;
 			default: printf ("Invalid input \n"); break;
@@ -59,7 +56,7 @@ int display() {
 	}
 	else {
 		printf ("\n Queue elements are: ");
-		for (i=front; i<=rear; i++)
+		for (i = front; i <= rear; i++)
 		printf ("%d", queue[i]);
 		printf ("\n");
 	}

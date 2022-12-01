@@ -1,16 +1,16 @@
 // Experiment 1 - Stack Implementation Using Array
 
 #include <stdio.h>
-int stack[5], top=-1,data;
+int stack[5], top =- 1, data;
 
 void push() {
 
-	if (top==4) {
+	if (top == 4) {
 		printf("\n\n Stack Overflow!! \n\n");
 		return;
 }
 
-	printf("Enter number to push:");
+	printf("Enter number to push: ");
 	scanf("%d",&data);
 	top++;
 	stack[top] = data;
@@ -18,10 +18,9 @@ void push() {
 
 void pop() {
 
-	if (top==-1) {
+	if (top == -1) {
 		printf("\n\n Stack Underflow!! \n\n");
-	}
-	else {
+	} else {
 	int data = stack[top];
 	top--;
 	printf("The removed element is %d \n",data);
@@ -34,7 +33,7 @@ void display() {
 	}
 	else {
 		printf("\n");
-		for (int i=0; i<=top; i++) {
+		for (int i = 0; i <= top; i++) {
 			printf("%d", stack[i]);
 		}
 		printf("\n\n");
@@ -47,13 +46,13 @@ int main() {
 		printf("1. Push 2. Pop 3. Display 4. Exit \n");
 		scanf("%d",&op);
 		switch (op) {
-			case 1: push(); break;
-			case 2: pop(); break;
+			case 1: push(); display(); break;
+			case 2: pop(); display(); break;
 			case 3: display(); break;
 			case 4: break;
 			default: printf("Invalid option \n");
 			}
-		} while(op!=4);	
+		} while (op != 4);	
 	
 		return 0;
 }
