@@ -13,4 +13,4 @@ Collection of implementation and documentation of program codes.
 4. Commit your changes
 5. Open a pull request
 
-Any progranming languages are acceptable.
+All programming languages are acceptable.
