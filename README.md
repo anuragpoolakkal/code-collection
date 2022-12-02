@@ -1,4 +1,4 @@
-# Code Vault
+# Code Collection
 Collection of implementation and documentation of program codes.
 
 ### How to contribute?
