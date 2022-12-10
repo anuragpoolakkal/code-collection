@@ -32,7 +32,7 @@ public class pellSeries {
         // calling the function and prints the pell number
         System.out.println("\nThe pell number of position " + num + " is: " + pellNumber(num));
         System.out.println("\nPell series till position " + num + " is: ");
-        for (int i = 0; i <= num; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.println(pellNumber(i));
         }
     }
