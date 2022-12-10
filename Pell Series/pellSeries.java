@@ -3,12 +3,12 @@
 Algorithm:
 Step 1: Start
 Step 2: Create function pellNumber which accepts 'num' as input.
-Step 2: If num <= 2, return num.
-Step 3: Else return sum of twice the previous Pell number and the Pell number before that.
-Step 4: In main method, accept number/limit and store to num.
-Step 5: Print pell number of position num.
-Step 6: Print pell series till position num using recursion.
-Step 7: Stop
+Step 3: If num <= 2, return num.
+Step 4: Else return sum of twice the previous Pell number and the Pell number before that.
+Step 5: In main method, accept number/limit and store to num.
+Step 6: Print pell number of position num.
+Step 7: Print pell series till position num using recursion.
+Step 8: Stop
 
 */
 
