@@ -1,6 +1,17 @@
-// Write a program to print pell series.
+/*AIM: Write a program to print pell series.
 
-import java.io.*;
+Algorithm:
+Step 1: Start
+Step 2: Create function pellNumber which accepts 'num' as input.
+Step 2: If num <= 2, return num.
+Step 3: Else return sum of twice the previous Pell number and the Pell number before that.
+Step 4: In main method, accept number/limit and store to num.
+Step 5: Print pell number of position num.
+Step 6: Print pell series till position num using recursion.
+Step 7: Stop
+
+*/
+
 import java.util.Scanner;
 
 public class pellSeries {
@@ -19,7 +30,7 @@ public class pellSeries {
         Scanner sc = new Scanner(System.in);
         num = sc.nextInt();
         // calling the function and prints the pell number
-        System.out.println("The pell number of position " + num + " is: " + pellNumber(num));
+        System.out.println("\nThe pell number of position " + num + " is: " + pellNumber(num));
         System.out.println("\nPell series till position " + num + " is: ");
         for (int i = 0; i <= num; i++) {
             System.out.println(pellNumber(i));
